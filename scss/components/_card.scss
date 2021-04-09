@@ -1,0 +1,54 @@
+.card {
+  padding: 3rem;
+  max-width: 25rem;
+
+  img {
+    margin-bottom: 2.125rem;
+  }
+
+  h2 {
+    margin-bottom: 1.75rem;
+  }
+
+  p {
+    margin-bottom: 5.375rem;
+
+    @include tablet {
+      margin-bottom: 1.75rem;
+    }
+  }
+
+  &.orange {
+    background: $Bright-orange;
+    border-radius: 0.5rem 0 0 0.5rem;
+
+    @include tablet {
+      border-radius: 0.5rem 0.5rem 0 0;
+    }
+
+    .btn {
+      color: $Bright-orange;
+    }
+  }
+
+  &.cyan {
+    background: $Dark-cyan;
+
+    .btn {
+      color: $Dark-cyan;
+    }
+  }
+
+  &.dark-cyan {
+    background: $Very-dark-cyan;
+    border-radius: 0 0.5rem 0.5rem 0;
+
+    @include tablet {
+      border-radius: 0 0 0.5rem 0.5rem;
+    }
+
+    .btn {
+      color: $Very-dark-cyan;
+    }
+  }
+}
